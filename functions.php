@@ -4,9 +4,9 @@ function wpflattern_files()
 {
 
     wp_enqueue_script( 'bootstrap', get_theme_file_uri( 'assets/vendor/bootstrap/js/bootstrap.bundle.min.js', array('jquery'), NULL, true ) );
-    wp_enqueue_script( 'jquery_easing', get_theme_file_uri( 'assets/vendor/jquery.easing/jquery.easing.min.js' ), NULL, NULL, true );
+    wp_enqueue_script( 'jquery_easing', get_theme_file_uri( 'assets/vendor/jquery.easing/jquery.easing.min.js' ), array('jquery'), NULL, true );
     wp_enqueue_script( 'mail_validate_file', get_theme_file_uri( 'assets/vendor/php-email-form/validate.js' ), NULL, NULL, true );
-    wp_enqueue_script( 'jquery_sticky', get_theme_file_uri( 'assets/vendor/jquery-sticky/jquery.sticky.js' ), NULL, NULL, true );
+    wp_enqueue_script( 'jquery_sticky', get_theme_file_uri( 'assets/vendor/jquery-sticky/jquery.sticky.js' ), array('jquery'), NULL, true );
     wp_enqueue_script( 'isotype', get_theme_file_uri( 'assets/vendor/isotope-layout/isotope.pkgd.min.js' ), NULL, NULL, true );
     wp_enqueue_script( 'venobox', get_theme_file_uri( 'assets/vendor/venobox/venobox.min.js' ), NULL, NULL, true );
     wp_enqueue_script( 'waypoints', get_theme_file_uri( 'assets/vendor/waypoints/jquery.waypoints.min.js' ), NULL, NULL, true );
