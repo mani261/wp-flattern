@@ -33,9 +33,13 @@
     <div class="container d-flex">
 
       <div class="logo mr-auto">
-        <h1 class="text-light"><a href="<?php echo site_url(); ?>">Flattern</a></h1>
-        <!-- Uncomment below if you prefer to use an image logo -->
-        <!-- <a href="index.html"><img src="<?php echo get_theme_file_uri(); ?>/assets/img/logo.png" alt="" class="img-fluid"></a>-->
+          <?php
+          if (has_custom_logo()) {
+              echo '<a href="' . site_url() . '"><img src="' . the_custom_logo() . '" alt="" class="img-fluid"></a>';
+          } else {
+              echo '<h1 class="text-light"><a href="' . site_url() . '">Flattern</a></h1>';
+          }
+          ?>
       </div>
 
       <nav class="nav-menu d-none d-lg-block">
