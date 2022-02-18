@@ -33,7 +33,7 @@
     <div class="container d-flex">
 
       <div class="logo mr-auto">
-        <h1 class="text-light"><a href="index.html">Flattern</a></h1>
+        <h1 class="text-light"><a href="<?php echo site_url(); ?>">Flattern</a></h1>
         <!-- Uncomment below if you prefer to use an image logo -->
         <!-- <a href="index.html"><img src="<?php echo get_theme_file_uri(); ?>/assets/img/logo.png" alt="" class="img-fluid"></a>-->
       </div>
