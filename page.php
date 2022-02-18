@@ -13,6 +13,13 @@ while ( have_posts() ) : the_post();
                     <h2><?php the_title(); ?></h2>
                     <ol>
                         <li><a href="<?php echo site_url(); ?>">Home</a></li>
+                        <?php
+                        $parent_id = wp_get_post_parent_id(get_the_ID());
+                        if ($parent_id) { ?>
+                            <li><a href="<?php echo get_permalink($parent_id); ?>"><?php echo get_the_title($parent_id)?></a></li>
+                            <?php
+                        }
+                        ?>
                         <li><?php the_title(); ?></li>
                     </ol>
                 </div>
