@@ -180,7 +180,7 @@ h1, h2, h3, h4, h5, h6 {
   text-decoration: none;
 }
 
-.nav-menu .drop-down ul {
+.nav-menu .menu-item-has-children ul {
   display: block;
   position: absolute;
   left: 20px;
@@ -194,18 +194,18 @@ h1, h2, h3, h4, h5, h6 {
   transition: ease all 0.3s;
 }
 
-.nav-menu .drop-down:hover > ul {
+.nav-menu .menu-item-has-children:hover > ul {
   opacity: 1;
   top: 100%;
   visibility: visible;
 }
 
-.nav-menu .drop-down li {
+.nav-menu .menu-item-has-children li {
   min-width: 180px;
   position: relative;
 }
 
-.nav-menu .drop-down ul a {
+.nav-menu .menu-item-has-children ul a {
   padding: 10px 20px;
   font-size: 13px;
   font-weight: 500;
@@ -213,32 +213,32 @@ h1, h2, h3, h4, h5, h6 {
   color: #581601;
 }
 
-.nav-menu .drop-down ul a:hover, .nav-menu .drop-down ul .active > a, .nav-menu .drop-down ul li:hover > a {
+.nav-menu .menu-item-has-children ul a:hover, .nav-menu .menu-item-has-children ul .active > a, .nav-menu .menu-item-has-children ul li:hover > a {
   color: #f03c02;
 }
 
-.nav-menu .drop-down > a:after {
+.nav-menu .menu-item-has-children > a:after {
   content: "\ea99";
   font-family: IcoFont;
   padding-left: 5px;
 }
 
-.nav-menu .drop-down .drop-down ul {
+.nav-menu .menu-item-has-children .menu-item-has-children ul {
   top: 0;
   left: calc(100% - 30px);
 }
 
-.nav-menu .drop-down .drop-down:hover > ul {
+.nav-menu .menu-item-has-children .menu-item-has-children:hover > ul {
   opacity: 1;
   top: 0;
   left: 100%;
 }
 
-.nav-menu .drop-down .drop-down > a {
+.nav-menu .menu-item-has-children .menu-item-has-children > a {
   padding-right: 35px;
 }
 
-.nav-menu .drop-down .drop-down > a:after {
+.nav-menu .menu-item-has-children .menu-item-has-children > a:after {
   content: "\eaa0";
   font-family: IcoFont;
   position: absolute;
@@ -246,13 +246,13 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 @media (max-width: 1366px) {
-  .nav-menu .drop-down .drop-down ul {
+  .nav-menu .menu-item-has-children .menu-item-has-children ul {
     left: -90%;
   }
-  .nav-menu .drop-down .drop-down:hover > ul {
+  .nav-menu .menu-item-has-children .menu-item-has-children:hover > ul {
     left: -100%;
   }
-  .nav-menu .drop-down .drop-down > a:after {
+  .nav-menu .menu-item-has-children .menu-item-has-children > a:after {
     content: "\ea9d";
   }
 }
@@ -315,7 +315,7 @@ h1, h2, h3, h4, h5, h6 {
   text-decoration: none;
 }
 
-.mobile-nav .drop-down > a:after {
+.mobile-nav .menu-item-has-children > a:after {
   content: "\ea99";
   font-family: IcoFont;
   padding-left: 10px;
@@ -323,20 +323,20 @@ h1, h2, h3, h4, h5, h6 {
   right: 15px;
 }
 
-.mobile-nav .active.drop-down > a:after {
+.mobile-nav .active.menu-item-has-children > a:after {
   content: "\eaa1";
 }
 
-.mobile-nav .drop-down > a {
+.mobile-nav .menu-item-has-children > a {
   padding-right: 35px;
 }
 
-.mobile-nav .drop-down ul {
+.mobile-nav .menu-item-has-children ul {
   display: none;
   overflow: hidden;
 }
 
-.mobile-nav .drop-down li {
+.mobile-nav .menu-item-has-children li {
   padding-left: 20px;
 }
 
